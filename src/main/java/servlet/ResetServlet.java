@@ -15,7 +15,7 @@ public class ResetServlet extends HttpServlet {
         HttpSession session = request.getSession(true);
 
         // Gera labirinto novamente
-        int size = 50;
+        int size = 20;
         Integer[][] maze = new Integer[size][size];
         for(int i=0;i<size;i++) Arrays.fill(maze[i],1);
 

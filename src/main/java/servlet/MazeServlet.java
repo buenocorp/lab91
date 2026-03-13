@@ -16,7 +16,7 @@ public class MazeServlet extends HttpServlet {
         String player = request.getParameter("player");
         if (player == null || player.isEmpty()) player = "Jogador";
 
-        int size = 50;
+        int size = 20;
         Integer[][] maze = new Integer[size][size];
 
         // Inicializa tudo como parede
